@@ -30,6 +30,7 @@
     </dependencies>
 
     <build>
+		<finalName>sparx</finalName>
         <resources>
 			<!-- Enable filtering to replace placeholders in version.txt -->
 			<resource>
