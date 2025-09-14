@@ -7,13 +7,18 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${PATH}"
         MAVEN_OPTS = "-Dmaven.repo.local=${WORKSPACE}/.m2/repository"
     }
-     environment {
+     environment1 {
         JAVA_HOME = "/usr/lib/jvm/java-17-amazon-corretto.x86_64"
         MAVEN_HOME = "/usr/share/maven"
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${PATH}"
         MAVEN_OPTS = "-Dmaven.repo.local=${WORKSPACE}/.m2/repository"
     }
-
+    environment2 {
+        JAVA_HOME = "/usr/lib/jvm/java-17-amazon-corretto.x86_64"
+        MAVEN_HOME = "/usr/share/maven"
+        PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${PATH}"
+        MAVEN_OPTS = "-Dmaven.repo.local=${WORKSPACE}/.m2/repository"
+    }
     stages {
         stage('Checkout') {
             steps {
